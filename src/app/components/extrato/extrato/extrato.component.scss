@@ -1,0 +1,43 @@
+@import "./../../../styles/global";
+
+app-extrato {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 25vw;
+  height: auto;
+  padding: 10px 29px;
+  margin-top: 2rem;
+  background-color: $bank-3;
+  border-radius: 10px;
+  box-shadow: 0 15px 19px 0;
+  font-family: $primary;
+  text-align: center;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+      color: $bank-white;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+      color: $bank-6;
+      font-size: smaller;
+    }
+  }
+}
+
+p {
+  color: $bank-6;
+}

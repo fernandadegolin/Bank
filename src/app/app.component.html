@@ -1,1 +1,7 @@
-<app-nova-transferencia></app-nova-transferencia>
+<app-nova-transferencia
+  (toTransfer)="transfer($event)">
+</app-nova-transferencia>
+
+<app-extrato class="extrato" [transferNumber]="transferNumber"></app-extrato>
+
+

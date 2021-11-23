@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bank-app';
+  transferNumber: any[] = [];
+
+  transfer($event){
+    const transfer = {...$event, data: new Date()}
+    this.transferNumber.push(transfer);
+    console.log($event);
+  }
 }
