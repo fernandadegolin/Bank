@@ -16,6 +16,10 @@ app-extrato {
   font-family: $primary;
   text-align: center;
 
+  @media screen and (max-width: 980px) {
+    width: auto;
+  }
+
   &__head {
     display: flex;
     justify-content: space-between;
