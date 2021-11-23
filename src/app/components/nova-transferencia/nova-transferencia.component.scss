@@ -1,0 +1,57 @@
+@import './../../../styles/global';
+
+.container{
+  width: 20vw;
+  height: auto;
+  padding: 10px 29px;
+  margin-top: 2rem;
+  background-color: $bank-3;
+  border-radius: 10px;
+  box-shadow: 0 15px 19px 0;
+
+  &__title{
+    color: $bank-white;
+    font-family: $primary;
+    text-align: center;
+  }
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+
+  &__title{
+  color: $bank-6;
+  font-family: $primary;
+  margin: inherit;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .8rem;
+
+  &__label{
+    font-size: 14px;
+    color: $bank-5;
+    font-family: $primary;
+  }
+
+  &__input{
+    border-radius: 4px;
+    outline: none;
+    border: inherit;
+  }
+}
+
+.button-wraper{
+  display: flex;
+  justify-content: center;
+
+  button{
+    background: $bank-2;
+    color: $bank-white;
+    border: inherit;
+  }
+}
