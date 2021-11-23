@@ -10,9 +10,18 @@
   box-shadow: 0 15px 19px 0;
 
   &__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: $bank-white;
     font-family: $primary;
     text-align: center;
+
+    img{
+      width: 3vw;
+      height: fit-content;
+      margin-right: 1.5rem;
+    }
   }
 
   @media screen and (max-width: 980px) {
