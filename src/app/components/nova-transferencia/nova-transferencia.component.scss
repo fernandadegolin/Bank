@@ -1,6 +1,6 @@
-@import './../../../styles/global';
+@import "./../../../styles/global";
 
-.container{
+.container {
   width: 25vw;
   height: auto;
   padding: 10px 29px;
@@ -9,7 +9,7 @@
   border-radius: 10px;
   box-shadow: 0 15px 19px 0;
 
-  &__title{
+  &__title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
     font-family: $primary;
     text-align: center;
 
-    img{
+    img {
       width: 3vw;
       height: fit-content;
       margin-right: 1.5rem;
@@ -34,47 +34,47 @@
   }
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
 
-  &__title{
-  color: $bank-6;
-  font-family: $primary;
-  letter-spacing: .3rem;
-  text-align: center;
+  &__title {
+    color: $bank-6;
+    font-family: $primary;
+    letter-spacing: 0.3rem;
+    text-align: center;
   }
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 
-  &__label{
+  &__label {
     color: $bank-5;
     font-family: $primary;
   }
 
-  &__input{
+  &__input {
     height: 1.5rem;
     border-radius: 4px;
     outline: none;
     border: inherit;
   }
 
-  ::placeholder{
+  ::placeholder {
     font-family: $primary;
     font-size: 12px;
   }
 }
 
-.button-wraper{
+.button-wraper {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
 
-  button{
+  button {
     width: 9vw;
     height: 6vh;
     background: $bank-gradient;
@@ -84,6 +84,12 @@
     text-transform: uppercase;
     font-size: x-small;
     letter-spacing: 2px;
+    cursor: pointer;
+
+    &:hover,
+    :focus {
+      opacity: 0.6;
+    }
 
     @media screen and (max-width: 980px) {
       width: auto;
