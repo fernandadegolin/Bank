@@ -1,21 +1,26 @@
-<div class="container__title">
-  <img src="./../../../assets/logo/lemon.png" alt="">
-  <h1>Lemon Bank</h1>
-</div>
+<header>
+  <div class="container__title">
+    <img src="./../../../assets/logo/lemon.png" alt="">
+    <a routerLink="/extrato">
+      <h1>Lemon Bank</h1>
+    </a>
+  </div>
+</header>
 
 <section class="container">
-
   <form class="form" (ngSubmit)="transfer()">
     <h2 class="form__title">Nova Transfência</h2>
 
     <div class="form-field">
       <label class="form-field__label" for="value">Valor</label>
-      <input class="form-field__input" id="value" type="number" [(ngModel)]="value" name="value" placeholder="Digite o valor de sua tranfêrencia">
+      <input class="form-field__input" id="value" type="number" [(ngModel)]="value" name="value"
+        placeholder="Digite o valor de sua tranfêrencia">
     </div>
 
     <div class="form-field">
       <label class="form-field__label" for="path">Destino</label>
-      <input class="form-field__input" id="path" type="text" [(ngModel)]="path" name="path" placeholder="Digite a conta de destino">
+      <input class="form-field__input" id="path" type="text" [(ngModel)]="path" name="path"
+        placeholder="Digite a conta de destino">
     </div>
 
     <div class="button-wraper">

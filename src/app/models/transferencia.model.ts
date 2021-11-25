@@ -3,8 +3,8 @@
 // }
 
 export interface Transferencia {
-  id?: string
-  valor: number
-  destino: string
+  id?: string | string
+  value: number
+  path: string | string
   data?: string
 }
