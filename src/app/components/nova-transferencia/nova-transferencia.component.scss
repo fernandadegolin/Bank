@@ -100,3 +100,23 @@
     }
   }
 }
+
+.extratos {
+  display: flex;
+  justify-content: flex-end;
+
+  img {
+    width: 3vw;
+    height: fit-content;
+    margin-top: 1.5rem;
+
+    @media screen and (max-width: 980px) {
+      width: 11vw;
+      height: auto;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

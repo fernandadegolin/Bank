@@ -1,18 +1,36 @@
-<table class="table">
-  <thead class="table__head">
-    <th class="table__head__content">Data</th>
-    <th class="table__head__content">Valor</th>
-    <th class="table__head__content">Destino</th>
-  </thead>
-  <tbody *ngIf="transferNumber?.length > 0 ; else emptyList">
-    <tr class="table__row" *ngFor="let transferNumber of transferNumber">
-      <td class="table__row__content">{{ transferNumber?.data | date:"shortDate" }}</td>
-      <td class="table__row__content">{{ transferNumber?.value | currency}}</td>
-      <td class="table__row__content">{{ transferNumber?.path }}</td>
-    </tr>
-  </tbody>
-</table>
+<header>
+  <div class="container__title">
+    <img src="./../../../assets/logo/lemon.png" alt="">
+    <a routerLink="/extrato">
+      <h1>Lemon Bank</h1>
+    </a>
+  </div>
+</header>
 
-<ng-template #emptyList>
-  <p>Nenhuma operação realizada</p>
-</ng-template>
+<section>
+  <table class="table">
+    <h2 class="table__title">Extratos</h2>
+    <thead class="table__head">
+      <th class="table__head__content">Data</th>
+      <th class="table__head__content">Valor</th>
+      <th class="table__head__content">Destino</th>
+    </thead>
+    <tbody *ngIf="transferNumber?.length > 0 ; else emptyList">
+      <tr class="table__row" *ngFor="let transferNumber of transferNumber">
+        <td class="table__row__content">{{ transferNumber?.data | date:"shortDate" }}</td>
+        <td class="table__row__content">{{ transferNumber?.value | currency}}</td>
+        <td class="table__row__content">{{ transferNumber?.path }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #emptyList>
+    <p>Nenhuma operação realizada</p>
+  </ng-template>
+</section>
+
+<div class="back">
+  <a routerLink="/nova-transferencia">
+    <img src="./../../../assets/logo/voltar.png" alt="Seta voltar">
+  </a>
+</div>

@@ -5,6 +5,32 @@ app-extrato {
   justify-content: center;
 }
 
+.container {
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $primary;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: $bank-white;
+    }
+
+    img {
+      width: 3vw;
+      height: fit-content;
+      margin-right: 1.5rem;
+
+      @media screen and (max-width: 980px) {
+        width: 11vw;
+        height: auto;
+      }
+    }
+  }
+}
+
 .table {
   width: 25vw;
   height: auto;
@@ -17,7 +43,15 @@ app-extrato {
   text-align: center;
 
   @media screen and (max-width: 980px) {
-    width: auto;
+    width: 90vw;
+    padding: 10px;
+  }
+
+  &__title {
+    color: $bank-6;
+    font-family: $primary;
+    letter-spacing: 0.3rem;
+    text-align: center;
   }
 
   &__head {
@@ -44,4 +78,24 @@ app-extrato {
 
 p {
   color: $bank-6;
+}
+
+.back {
+  display: flex;
+  justify-content: flex-end;
+
+  img {
+    width: 2vw;
+    height: fit-content;
+    margin-top: 1.5rem;
+
+    @media screen and (max-width: 980px) {
+      width: 8vw;
+      height: auto;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
